@@ -1,0 +1,26 @@
+PS C:\Users\hinac\Desktop\web> cd C:\Users\hinac\Documents\git_challenge
+PS C:\Users\hinac\Documents\git_challenge> git init
+Initialized empty Git repository in C:/Users/hinac/Documents/git_challenge/.git/
+PS C:\Users\hinac\Documents\git_challenge> git add .
+PS C:\Users\hinac\Documents\git_challenge> git diff --staged
+diff --git a/hello_world.txt b/hello_world.txt
+new file mode 100644
+index 0000000..2889c67
+--- /dev/null
++++ b/hello_world.txt
+@@ -0,0 +1 @@
++Hello,world!
+\ No newline at end of file        
+PS C:\Users\hinac\Documents\git_challenge> git commit -m "テキストを編集"
+[main (root-commit) 8c380ff] テキストを編集
+ 1 file changed, 1 insertion(+)    
+ create mode 100644 hello_world.txt
+PS C:\Users\hinac\Documents\git_challenge> git diff --staged          
+PS C:\Users\hinac\Documents\git_challenge> git add .                  
+PS C:\Users\hinac\Documents\git_challenge> git commit -m "和訳を追加" 
+[main 309255e] 和訳を追加
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+PS C:\Users\hinac\Documents\git_challenge> git diff --staged
+PS C:\Users\hinac\Documents\git_challenge> git log --oneline
+309255e (HEAD -> main) 和訳を追加
+8c380ff テキストを編集
